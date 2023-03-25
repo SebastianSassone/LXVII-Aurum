@@ -1,0 +1,790 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  max-width: 100%;
+  background-color: black;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+}
+
+/* Barra de navegacion */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(31, 17, 2);
+}
+
+/* Menu de navegacion */
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+}
+
+.nav-link {
+  color: gold;
+  text-decoration: none;
+}
+
+.logo{
+background-color: rgb(31, 17, 2);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px;
+width: 100%;
+color: gold;
+text-decoration: none;
+border: 1px solid black;
+}
+
+.p_number{
+font-size: 10px;
+position: absolute;
+margin-top: -35px;
+}
+
+.p_text{
+font-size: 40px;
+}
+
+.nav-menu_visible {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/*Toglee*/
+.nav-toggle {
+  display: none;
+}
+
+/* Section portada*/
+
+.portada{
+  height: 100vh;
+  width: 100%;
+}
+
+.portada_img{
+  height: 86%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('../img/Jewelry_Gray_background_Brown_haired_Hands_Glance_586068_1920x1080.jpg');
+}
+
+.portada_text{
+  background-color: rgb(31, 17, 2);
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  justify-content: center;
+}
+
+.portada_text a{
+  text-decoration: none;
+  color: gold;
+  cursor: pointer;
+}
+
+/* Section local */
+
+.local{
+height: 100vh;
+width: 100%;
+}
+
+.local_img{
+  height: 86%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('../img/nuestro_lugar.jpg');
+}
+
+.local_text{
+  background-color: rgb(31, 17, 2);
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  justify-content: center;
+}
+
+.local_text a{
+  text-decoration: none;
+  color: gold;
+  cursor: pointer;
+}
+
+/* Registro */
+
+.section_registro{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 54%);
+}
+
+.section_registro form{
+  background-color:  rgb(31, 17, 2);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 22px;
+  height: 60vh;
+  width: 400px;
+  border: 5px groove goldenrod;
+}
+
+.section_registro form button{
+  padding: 7px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Iniciar sesion */
+
+.section_ini_sec{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 54%);
+}
+
+.section_ini_sec form{
+  background-color:  rgb(31, 17, 2);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 22px;
+  height: 35vh;
+  width: 400px;
+  border: 5px groove goldenrod;
+}
+
+.button_form_in{
+  padding: 7px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.button_form_in:hover{
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+/* Tienda */
+
+.section_products{
+  height: 1800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 54%);
+}
+
+.products{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card:hover{
+  transform: scale(1.01);
+  transition: 0.1s;
+}
+
+.pro_text{
+  height: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.card{
+  padding: 5px;
+  height: 280px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(31, 17, 2);
+}
+
+.text_but{
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.text{
+ height: 70px;
+ color: white;
+ text-align: center;
+}
+
+.name{
+ font-size: 19px;
+ padding: 4px;
+}
+
+.price{
+ font-size: 20px;
+ padding: 4px;
+}
+
+.div_but_agre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but_agre{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 90%;
+  font-size: 12px;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+
+/* Factura */
+
+.section_factura{
+  position: fixed;
+  z-index: 30;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.factura{
+  height: 60vh;
+  width: 400px;
+  border: 1px solid rgb(31, 17, 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+}
+
+.p_mar{
+  color: gold;
+  font-size: 20px; 
+}
+
+.but_acep{
+  color: white;
+  padding: 10px;
+  background-color: rgb(31, 17, 2);
+  cursor: pointer;
+}
+
+
+.but_agre:hover{
+  transform: scale(1.02);
+}
+
+.img1{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/engin-akyurt-FsuqRsukQRA-unsplash.jpg');
+  background-size: cover;
+}
+
+.img2{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/sabrianna-9poB8SBFveA-unsplash.jpg');
+  background-size: cover;
+}
+
+.img3{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/sabrianna-Y_bxfTa_iUA-unsplash.jpg');
+  background-size: cover;
+}
+
+.img4{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/andres-vera-CmmYT6Mm948-unsplash.jpg');
+  background-size: cover;
+}
+
+.img5{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/carmen-alarcon-PHcEof5kfqk-unsplash.jpg');
+  background-size: cover;
+}
+
+.img6{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/sabrianna-u1Hv_erOQH0-unsplash.jpg');
+  background-size: cover;
+}
+
+.img7{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/laurenz-heymann-PWLJC7fAzkg-unsplash.jpg');
+  background-size: cover;
+}
+
+.img8{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/laurenz-heymann-z6lNa2jYaVw-unsplash.jpg');
+  background-size: cover;
+}
+
+.img9{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/narek-hakobyan-KSzUnlPbB3w-unsplash.jpg');
+  background-size: cover;
+}
+
+/* Carrito */
+
+.abrir_c{
+  color: white;
+  width: 70px;
+  height: 46px;
+  cursor: pointer;
+  margin-left: 94%;
+  position: fixed;
+  margin-top: 98px;
+}
+
+.abrir_img{
+  background-image: url('../img/carrito_2.png');
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.abrir_img:hover {
+  transform: scale(1.09);
+}
+
+.cerrar_c{
+  background-color: rgb(31, 17, 2);
+  color: white;
+  padding: 6px;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 376px;
+  margin-bottom: 55.5vh;
+  }
+
+.section_carrito{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: relative;
+  background-color: rgba(0, 0, 0, 0.577);
+}
+
+.carrito{
+  border: 1px solid rgb(31, 17, 2);
+  height: 60vh;
+  width: 400px;
+  padding: 5px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.lis_produc{
+  height: 60%;
+  width: 90%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(31, 17, 2);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.val_final{
+  height: 10%;
+  width: 90%;
+  color: white;
+  border: 1px solid rgb(31, 17, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mosp_produc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 96%;
+  height: 40px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color:  rgb(31, 17, 2);
+}
+
+.mosp_produc:hover{
+  transform: scale(1.007);
+  transform: 4s;
+}
+
+.but_bor{
+  color: white;
+  background-color: black;
+  width: 35px;
+  height: 33.5px;
+  margin-left: 54%;
+  border: none;
+  cursor: pointer;
+}
+
+.but_fin_com{
+  color: white;
+  padding: 10px;
+  background-color: rgb(31, 17, 2);
+  cursor: pointer;
+}
+
+.but_fin_com:hover{
+  transform: scale(1.009);
+  transition: 2s;
+}
+
+/* Compra oro */
+
+.section_com_oro{
+height: 1400px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 54%);
+}
+
+/* Grafico */
+.grafico {
+  height: 400px; 
+  width: 660px; 
+}
+
+.grafico_movil {
+  display: none;
+}
+
+/* Products img */
+
+.img10{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/LINGOTE-1OZ-24K-9999-MILESIMAS-600x440.jpg');
+  background-size: cover;
+}
+.img11{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/LINGOTE-5GR-24K-9999-MILESIMAS-600x440.jpg');
+  background-size: cover;
+}
+.img12{
+  height: 200px;
+  width: 190px;
+  background-image: url('../img/LINGOTE-ORO-100-GRAMOS-9999-MILESIMAS.png');
+  background-size: cover;
+}
+
+/* Footer */
+
+.footer{
+background-color: black;
+align-self: flex-end;
+width: 100%;
+height: 300px;
+text-align: center;
+align-items: center;
+display: flex;
+justify-content: space-evenly;
+}
+
+.img_log{
+  height: 160px;
+  width: 180px;
+  background-image: url('../img/footer_img_log.png');
+  background-size: cover;
+}
+
+.img_contac{
+  height: 110px;
+  width: 250px;
+  background-image: url('../img/footer_img_con.png');
+  background-size: cover;
+}
+
+.footer p{
+color: gold;
+border: 0.1px solid gold;
+padding: 30px;
+font-size: 14px;
+}
+
+/* Adaptable */
+@media (max-width: 768px) {
+  body{
+    max-width: 100%;
+  }
+
+  .logo{
+    display: flex;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  /* .logo{
+    margin-top: -68.6px;
+  } */
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 0;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 140px;
+  }
+
+  .nav-toggle {
+    color: gold;
+    background: none;
+    border: none;
+    font-size: 35px;
+    line-height: 60px;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: right;
+    background-color: black;
+  }
+
+  .nav-menu_visible {
+    left: 100%;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Portada */
+
+  .portada{
+    height: 100vh;     
+  }
+
+  .portada_img{
+    height: 85%;
+    background-image: url(../img/portada_movile.webp);
+  }
+ 
+  .portada_text{
+    font-size: 15px;
+    height: 75px;
+    text-align: center;
+  }
+ 
+  .local{
+    height: 100vh;
+  }
+  
+  .local_img{
+    height: 85%;
+    background-image: url(../img/local_movile.jpg);
+  }
+ 
+  .local_text{
+    font-size: 15px;
+    height: 75px;
+    text-align: center;
+  }
+
+  /* Registro */
+
+  .section_registro form{
+    padding: 9px;
+    margin-top: 35px;
+    font-size: 15px;
+    height: 69vh;
+    width: 290px;
+  }
+  
+  /* Iniciar sesion */
+
+  .section_ini_sec form{
+    padding: 10px;
+    width: 290px;
+    font-size: 15px;
+  }
+
+  /* Tienda */
+
+  .abrir_c{
+    margin-left: 2px;
+    height: 35px;
+    width: 55px;
+  }
+
+  .section_products{
+    height: 3800px;
+  }
+
+  .carrito{
+    width: 300px;
+  }
+
+  .factura{
+    width: 300px;
+  }
+
+  .cerrar_c{
+    margin-left: 285px;
+    margin-bottom: 55vh;
+  }
+
+  .products{
+    flex-direction: column;
+    height: 950px;
+  }
+
+  .pro_text{
+    font-size: 25px;
+  }
+
+  .name{
+    font-size: 20px;
+  }
+
+  .price{
+    font-size: 19px;
+  }
+  /* Compra oro */
+  
+  .section_com_oro{
+    height: 1400px;
+  }
+
+  .grafico{
+    display: none;
+  }
+  
+  /* Footer */
+
+  .img_log{
+    display: none;
+  }
+
+  .footer p{
+    padding: 6px;
+    font-size: 10px;
+    width: 65px;
+    height: 55px;
+  }
+
+  .img_contac{
+    height: 75px;
+    width: 170px;
+  }
+}
+  
+

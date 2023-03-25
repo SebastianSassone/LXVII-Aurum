@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>LXVII Aurum</title>
+	<link rel="icon" type="image/jpg" 
+	href="../img/Logo67gold.gif"
+	gif.gif>
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/7e5b2d153f.js"	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://oro.bullionvault.es/chart/bullionvaultchart.js"></script>
+				<script type="text/javascript" >
+					var options = {
+						bullion: 'gold',
+						currency: 'USD',
+						timeframe: '1w',
+						chartType: 'line',
+						miniChartModeAxis : 'oz',
+						referrerID: 'MINOMBREDEUSUARIO',
+						containerDefinedSize: true,
+						miniChartMode: false,
+						displayLatestPriceLine: true,
+						switchBullion: true,
+						switchCurrency: true,
+						switchTimeframe: true,
+						switchChartType: true,
+						exportButton: true
+					};
+					var chartBV = new BullionVaultChart(options, 'embed');
+				</script>
+ </head>
+  <body>
+    <header class="header">
+        <div class="logo nav-link">
+			<p class="p_number">LXVII</p>
+			<p class="p_text">Aurum</p>
+		</div>
+        <nav class="nav">
+			<button class="nav-toggle" aria-label="Abrir menú">
+				<i class="fas fa-bars"></i>
+			</button>
+			<ul class="nav-menu nav-menu_visible">
+				<li class="nav-menu-item">
+					<a href="/" class="nav-menu-link nav-link">Inicio</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="/tienda" class="nav-menu-link nav-link">Tienda</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="/registro" class="nav-menu-link nav-link">Registro</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="/compraoro" class="nav-menu-link nav-link">Compra oro</a>
+				</li>
+			</ul>
+		</nav>
+    </header>
+	<div id="abrir_c" class="abrir_c"><div class="abrir_img"></div></div>
+	
+    <section class="section_factura" id="section_factura">
+        <div class="factura">
+		    <p class="p_mar">Aurum</p>
+		    <p>Nombre:<p id="nombre"></p></p>
+		    <p>Apellido:<p id="apellido"></p></p>
+		    <p>Email:<p id="email"></p></p>
+		    <p>Valor final:<p id="valor_final"></p></p>
+		    <div class="but_acep" id="but_acept">Aceptar</div>
+	    </div>
+	</section> 
+
+	<section class="section_carrito" id="section_carrito">
+		<div id="cerrar_c" class="cerrar_c">X</div>
+		<div class="carrito">
+          <div class="lis_produc" id="lis_produc"></div>
+		  <div class="val_final" id="val_final"></div>
+		  <div class="but_fin_com" id="but_vac_car">Vaciar carrito</div>
+		  <div class="but_fin_com" id="but_fin_com">Finalizar compra</div>
+		</div>
+	</section>
+	<section class="section_com_oro" id="section_products">
+       
+		<p class="pro_text">Lingotes de oro</p>
+		
+		<div class="products">
+		<div class="card">
+	       <div class="img10"></div>
+		   <div class="text_but">
+			<div class="text">
+			  <p class="name">Lingote de oro 20g</p>
+			  <p class="price">284963,83$</p>
+			</div>
+			<div class="div_but_agre">
+			   <button type="button" class="but_agre" id="but_agre">Agregar al carrito</button>
+			</div> 
+		</div>
+		</div>
+
+            <div class="card">
+    	       <div class="img11"></div>
+			   <div class="text_but">
+			       <div class="text">
+			         <p class="name">Lingote de oro 10g</p>
+			         <p class="price">150153,73$</p>
+			       </div>
+			       <div class="div_but_agre">
+			          <button type="button" class="but_agre" id="but_agre">Agregar al carrito</button>
+			       </div> 
+			    </div>
+    		</div>
+
+                <div class="card">
+        	       <div class="img12"></div>
+				   <div class="text_but">
+		            <div class="text">
+			          <p class="name">Lingote de oro 50g</p>
+			          <p class="price">684984,36$</p>
+		            </div>
+				    <div class="div_but_agre">
+		               <button type="button" class="but_agre" id="but_agre">Agregar al carrito</button>
+			        </div> 
+		        </div>
+		</div>
+		</div>
+		<div id="embed" class="grafico"></div>
+	</section>
+<footer class="footer">
+	<p>Copyright© Sebastian Sassone 2023</p>	
+   <div class="img_log"></div>
+   <div class="img_contac"></div>
+</footer>
+</body>
+ <script defer src="../js/graficos.js"></script>
+ <script defer src="../js/compraoro.js"></script>
+ <script defer src="../js/nav.js"></script>
+
+</html>
+
