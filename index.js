@@ -45,6 +45,7 @@ app.post('/iniciar_sesion', controller.buscar);
 //Mostrar datos
 app.get('/datos', controller.mostrar_perfil)
 
+mongoose.set("strictQuery", false);
 mongoose.connect(
     process.env.URI_MONGO_REMOTA,
       (error) => {
