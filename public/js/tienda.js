@@ -123,23 +123,22 @@ function crear_producto(producto){
 }
 crear_producto(producto)
 
-
 async function solicitar_datos(){
     try{
-      let response = await fetch('http://localhost:8000/datos');
-      let respuesta = await response.json();
+    //   let response = await fetch('http://localhost:8000/datos');
+    //   let respuesta = await response.json();
       const but_fin_com = document.getElementById('but_fin_com')
       but_fin_com.addEventListener('click', () => {
          if(pre_produc_default == 0){
              alert('No hay productos en su carrito')
          }else{
-            let section_factura = document.getElementById('section_factura')
+            let section_factura = document.getElementById('section_factura')     
             section_factura.style.display = 'flex'
             
-                document.getElementById('nombre').innerHTML = respuesta.nombre
-                document.getElementById('apellido').innerHTML = respuesta.apellido
-                document.getElementById('email').innerHTML = respuesta.email
-                document.getElementById('valor_final').innerHTML = pre_produc_default     
+                // document.getElementById('nombre').innerHTML = respuesta.nombre
+                // document.getElementById('apellido').innerHTML = respuesta.apellido
+                // document.getElementById('email').innerHTML = respuesta.email
+                // document.getElementById('valor_final').innerHTML = pre_produc_default     
          }
       })
 
