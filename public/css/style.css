@@ -312,7 +312,7 @@ width: 100%;
 .section_factura{
   position: fixed;
   z-index: 30;
-  display: flex;
+  display: none;
   height: 100vh;
   width: 100%;
   justify-content: center;
