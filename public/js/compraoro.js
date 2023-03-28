@@ -92,10 +92,10 @@ async function solicitar_datos(){
             let section_factura = document.getElementById('section_factura')
             section_factura.style.display = 'flex'
             
-                document.getElementById('nombre').innerHTML = respuesta.nombre
-                document.getElementById('apellido').innerHTML = respuesta.apellido
-                document.getElementById('email').innerHTML = respuesta.email
-                document.getElementById('valor_final').innerHTML = pre_produc_default     
+                   document.getElementById('nombre').innerHTML = respuesta.name
+                   document.getElementById('apellido').innerHTML = respuesta.apellido
+                   document.getElementById('email').innerHTML = respuesta.email
+                   document.getElementById('valor_final').innerHTML = pre_produc_default     
          }
       })
 
