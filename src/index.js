@@ -10,19 +10,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/tienda', (req, res) => {
-    res.sendFile(__dirname + '\\public\\html\\tienda.html')
+    res.sendFile(__dirname + '/public/html/tienda.html')
 });
 
 app.get('/registro', (req, res) => {
-    res.sendFile(__dirname + '\\public\\html\\registro.html')
+    res.sendFile(__dirname + '/public/html/registro.html')
 });
 
 app.get('/compraoro', (req, res) => {
-    res.sendFile(__dirname + '\\public\\html\\compraoro.html')
+    res.sendFile(__dirname + '/public/html/compraoro.html')
 });
 
 app.get('/ini_sec', (req, res) => {
-    res.sendFile(__dirname + '\\public\\html\\ini_sec.html')
+    res.sendFile(__dirname + '/public/html/ini_sec.html')
 });
 
 app.get('/registrarse', (req, res) => {

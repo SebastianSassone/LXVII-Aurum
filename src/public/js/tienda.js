@@ -125,7 +125,7 @@ function crear_producto(producto){
 
 async function solicitar_datos(){
     try{
-      let response = await fetch('http://localhost:8000/datos');
+      let response = await fetch('https://lxvii-aurum.onrender.com/datos');
       let respuesta = await response.json();
       const but_fin_com = document.getElementById('but_fin_com')
       but_fin_com.addEventListener('click', () => {
