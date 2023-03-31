@@ -6,7 +6,7 @@ const PORT = process.env.PORT;
 
 //Rutas
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '\\public\\index.html')
+    res.sendFile(__dirname + '/public/index.html')
 });
 
 app.get('/tienda', (req, res) => {
