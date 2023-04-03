@@ -51,13 +51,10 @@ const nueva_cuenta = async (req, res) => {
     }
 }
 
-const buscar = async (req, res) => {
-        console.log({email:req.body.email})	
-        console.log({pasword:req.body.contraseña})	
+const buscar = async (req, res) => {	
         try{   
-         const user = await Usuario.findOne({email:req.body.email}).lean() // .lean() => Dejarme lo que devuelve como un objeto vanilla javascript
+         const user = await Usuario.findOne({email:req.body.email}).lean()
          if(user.contraseña2===req.body.contraseña){
-            //  res.render('datos/user', { pelicula, title: `Video Club - Viendo: ${pelicula.title}`})
             
             id = user.usuario_id
              
@@ -73,7 +70,6 @@ const buscar = async (req, res) => {
             }
 	}
 
-    // Mostrar
     const mostrar_perfil = async (req, res) => {
         try{   
             const user = await Usuario.findOne({usuario_id: id})   

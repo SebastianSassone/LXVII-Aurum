@@ -16,7 +16,6 @@ cerrar_c.addEventListener('click', () => {
 const lis_produc = document.getElementById('lis_produc')
 const val_final = document.getElementById('val_final')
 const buttons = document.querySelectorAll('button')
-console.log(buttons)
 
 const productos = [
     ["Anillo Signature", 27000 + "$"],
