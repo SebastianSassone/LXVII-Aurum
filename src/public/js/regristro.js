@@ -1,6 +1,6 @@
 const $form = document.querySelector('#form')
 
-$form.addEventListener('submit', () => {
+$form.addEventListener('click', () => {
     alert('Funcion inhabilitada temporalmente')
 }
 
