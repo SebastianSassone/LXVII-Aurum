@@ -122,7 +122,7 @@ function crear_producto(producto){
 }
 // crear_producto(producto)
 
-async function solicitar_datos(){
+/*async function solicitar_datos(){
     try{
       let response = await fetch('https://lxvii-aurum.onrender.com/datos');
       let respuesta = await response.json();
@@ -148,6 +148,6 @@ async function solicitar_datos(){
 
     }catch (error){
         console.log(error)}
-}
+}*/
 
 solicitar_datos()
